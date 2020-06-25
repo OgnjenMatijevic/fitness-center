@@ -177,6 +177,7 @@ body {
   border-bottom: 3px solid transparent;
   display: inline-block;
   transition: border-bottom 0.3s ease-in;
+  backface-visibility: hidden;
 }
 
 .navbar .current {
@@ -1290,8 +1291,10 @@ body {
   padding: 23px 27px;
   max-width: 450px;
   width: 100%;
-  transition: transform 0.5s ease-out;
+  transition: 0.5s ease-out;
+  transition-property: opacity, top;
   opacity: 0;
+  backface-visibility: hidden;
 }
 
 .popup-wrap .popup-title {
