@@ -176,7 +176,7 @@ body {
   padding-bottom: 15px;
   border-bottom: 3px solid transparent;
   display: inline-block;
-  -webkit-transition: border-bottom 0.3s ease-in;
+  transition: border-bottom 0.3s ease-in;
 }
 
 .navbar .current {
@@ -1291,7 +1291,7 @@ body {
   max-width: 450px;
   width: 100%;
   transition: 0.5s ease-out;
-  transitio-webkit-n-property: opacity, top;
+  transition-property: opacity, top;
   opacity: 0;
 }
 
