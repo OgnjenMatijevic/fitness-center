@@ -265,15 +265,15 @@ body {
 
   .navbar-nav .navbar-link {
     padding-bottom: 6px;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
   }
 
   .navbar-nav .current {
-    border-bottom: 2px solid #FF1D6A;
+    border-bottom: 1px solid #FF1D6A;
   }
 
   .navbar .navbar-link:hover {
-    border-bottom: 2px solid #FF1D6A;
+    border-bottom: 1px solid #FF1D6A;
   }
 
   .navbar .navbar-nav {
