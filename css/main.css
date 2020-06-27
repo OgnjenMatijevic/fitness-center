@@ -920,20 +920,15 @@ body {
 }
 
 @media (max-width: 475px) {
-  .media-wrap img {
-    max-width: 13px;
-    max-height: 13px;
-  }
-
   .media-wrap .media-icon {
     padding: 8px;
   }
 
   .hero .media-wrap {
-    height: 138px;
+    height: 180px;
     justify-content: space-between;
     box-shadow: none;
-    top: 19%;
+    top: 20%;
   }
 
   .media-wrap .media-icon {
