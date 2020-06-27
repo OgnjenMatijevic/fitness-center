@@ -2850,6 +2850,9 @@ body {
   background: #24272E;
 }
 
+.copyright-bar .copyright {
+  text-align: center;
+}
 
 /* footer responsive */
 
@@ -2932,7 +2935,7 @@ body {
 
 @media (max-width: 475px) {
   .copyright-bar .copyright {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
