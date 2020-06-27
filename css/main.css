@@ -156,6 +156,13 @@ body {
   }
 }
 
+@media (max-width: 370px) {
+  .title-bar__wrap .section-title {
+    font-size: 27px;
+    padding-bottom: 6px;
+  }
+}
+
 /* navbar */
 .navbar {
   background: #24272E;
@@ -271,7 +278,7 @@ body {
 
   .navbar .navbar-nav {
     width: 80%;
-  } 
+  }
 }
 
 @media (max-width: 475px) {
@@ -285,6 +292,12 @@ body {
     border-bottom: 1px solid #FF1D6A;
   }
 
+}
+
+@media (max-width: 370px) {
+  .navbar-nav .navbar-link {
+    font-size: 9px;
+  }
 }
 
 /* hero */
@@ -449,7 +462,8 @@ body {
   background: #FF1D6A;
   padding: 6px 18px;
   display: inline-block;
-  transition: color 0.3s ease-in;
+  transition: 0.3s ease-in;
+  transition-property: background, color;
 }
 
 .class .class-price:hover {
@@ -764,7 +778,7 @@ body {
   .dont-stop .gym-tip {
     font-size: 18px;
     line-height: 1.5;
-    font-weight: 700;
+    font-weight: 500;
     max-width: 415px;
   }
 
@@ -806,8 +820,8 @@ body {
   }
 
   .class .class-title {
-    font-size: 22px;
-    max-width: 175px;
+    font-size: 18px;
+    max-width: 200px;
     padding-bottom: 10px;
   }
 
@@ -863,7 +877,7 @@ body {
   }
 
   .dont-stop .gym-tip {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.5;
   }
 
@@ -955,6 +969,16 @@ body {
 
   .dont-stop .get-started {
     padding: 9px 17px;
+  }
+}
+
+@media (max-width: 370px) {
+  .hero .classes {
+    display: none;
+  }
+
+  .hero .dont-stop {
+    display: none;
   }
 }
 
@@ -1134,7 +1158,7 @@ body {
   }
 
   .welcome .text-wrap {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .welcome .read-more__btn {
@@ -1176,6 +1200,40 @@ body {
 @media (max-width: 475px) {
   .welcome .line-height__wrap {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 370px) {
+  .welcome .container {
+    padding-top: 100px;
+  }
+
+  .welcome .section-tag {
+    font-size: 11px;
+  }
+
+  .welcome .section-title {
+    font-size: 26px;
+  }
+
+  .welcome .section-title {
+    padding-bottom: 6px;
+  }
+
+  .welcome .orange {
+    font-size: 14px;
+  }
+
+  .welcome .gym-about {
+    font-size: 14px;
+  }
+
+  .welcome .read-more__btn {
+    font-size: 12px;
+  }
+
+  .welcome .container {
+    padding-bottom: 50px;
   }
 }
 
@@ -1415,19 +1473,6 @@ body {
 }
 
 
-@media (max-width: 1200px) {
-  /* .class .popup-wrap {
-    display: none;
-  }
-
-  .class:hover .popup-wrap {
-    display: flex;
-  } */
-
-
-}
-
-
 @media (max-width:990px) {
   .our-classes .classes-grid {
     grid-template-columns: 1fr;
@@ -1436,9 +1481,6 @@ body {
 }
 
 @media (max-width: 760px) {
-  /* .our-classes .section-title {
-    font-size: 42px;
-  } */
 
   .our-classes .title-bar__wrap {
     margin-bottom: 35px;
@@ -1528,6 +1570,16 @@ body {
   }
 }
 
+@media (max-width: 370px) {
+  .popup-wrap .popup-title {
+    font-size: 20px;
+  }
+
+  .popup-wrap .popup-about {
+    font-size: 13px;
+  }
+}
+
 /* our trainer */
 .our-trainer {
   background: #24272E;
@@ -1547,17 +1599,6 @@ body {
 .our-trainer .title-bar__wrap {
   margin-bottom: 51px;
 }
-
-/* .our-trainer .purple-bar {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 128px;
-  height: 2px;
-  background: #FF1D6A;
-  transform: translateX(-50%);
-} */
-
 
 .text-grid__wrap .trainer-name {
   font-size: 35px;
@@ -1783,12 +1824,6 @@ body {
     right: 9%;
   }
 
-  /* .our-trainer .text-primary {
-    font-weight: 500;
-    max-width: 720px;
-    text-align: start;
-  } */
-
   .text-grid__wrap .trainers-tip {
     font-size: 20px;
     font-weight: 500;
@@ -1951,6 +1986,10 @@ body {
     margin-left: 15px;
     margin-right: 15px;
   }
+
+  .our-trainer .padding-section {
+    display: none;
+  }
 }
 
 @media (max-width: 475px) {
@@ -1964,6 +2003,46 @@ body {
 
   .images-grid__wrap .nav-right {
     right: 17%;
+  }
+}
+
+@media (max-width: 370px) {
+  .our-trainer .images-grid__wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .images-grid__wrap .main {
+    grid-column-start: unset;
+  }
+
+  .images-grid__wrap .main img {
+    max-width: 100%;
+  }
+
+  .images-grid__wrap .nav-left,
+  .images-grid__wrap .nav-right {
+    display: none;
+  }
+
+  .text-grid__wrap .text-wrap {
+    border-bottom: none;
+    padding-bottom: 100px;
+  }
+
+  .text-grid__wrap .trainer-media__wrap {
+    padding-bottom: 0;
+  }
+
+  .our-trainer .text-grid__wrap {
+    padding-bottom: 0;
+  }
+
+  .text-grid__wrap .trainer-name {
+    font-size: 25px;
+  }
+
+  .text-grid__wrap .profession {
+    font-size: 16px;
   }
 }
 
@@ -2071,17 +2150,46 @@ body {
 }
 
 @media (max-width: 760px) {
+
   .testimonials .left,
   .testimonials .right {
     display: none;
+  }
+
+  .testimonials .comment {
+    font-family: unset;
   }
 }
 
 
 @media (max-width: 580px) {
+
   .testimonials .left,
   .testimonials .right {
     display: none;
+  }
+
+  .testimonials .container {
+    padding-top: 207px;
+  }
+
+  .testimonials .comment {
+    font-family: unset;
+  }
+}
+
+@media (max-width: 370px) {
+  .testimonials .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .testimonials .title-bar__wrap {
+    margin-bottom: 65px;
+  }
+
+  .testimonials .poster-img {
+    margin-top: 65px;
   }
 }
 
@@ -2325,6 +2433,15 @@ body {
     display: none;
   }
 
+  .recent-blog .blog-body {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  .recent-blog .blog-primary {
+    font-size: 16px;
+    font-family: unset;
+  }
 }
 
 @media (max-width: 580px) {
@@ -2335,6 +2452,47 @@ body {
   .recent-blog .blog-body {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .recent-blog .blog-primary {
+    font-family: unset;
+  }
+}
+
+@media (max-width: 370px) {
+  .recent-blog .container {
+    padding-top: 100px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .recent-blog .main-img {
+    height: 121px;
+  }
+
+  .recent-blog .title-primary {
+    font-size: 22px;
+  }
+
+  .recent-blog .title-bar__wrap {
+    margin-bottom: 100px;
+  }
+
+  .recent-blog .blog-primary {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .recent-blog .quote {
+    font-size: 18px;
+  }
+
+  .recent-blog .title-secondary {
+    font-size: 17px;
+  }
+
+  .recent-blog .blog-card {
+    padding: 24px 20px;
   }
 }
 
@@ -2497,7 +2655,7 @@ body {
 
   .contact-us .textarea {
     grid-column-end: 2;
-  }  
+  }
 
   .contact-us .links-wrap {
     flex-direction: column;
@@ -2519,8 +2677,10 @@ body {
 
   .contact-us .submit-btn {
     font-size: 14px;
-    padding: 15px 70px
+    padding: 15px 70px;
+    font-family: unset;
   }
+
 }
 
 
@@ -2542,7 +2702,7 @@ body {
 
 .footer .container {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   font-family: "Montserrat";
   padding-top: 124px;
@@ -2731,17 +2891,57 @@ body {
     align-items: center;
   }
 
-  .footer-nav .nav-links a  {
+  .footer-nav .nav-links a {
     font-size: 12px;
   }
 
   .footer-nav .nav-links {
     max-width: 80%;
   }
+
+  .footer .footer-logo img {
+    max-width: 150px;
+  }
+
+  .footer .footer-logo {
+    padding-bottom: 55px;
+  }
+
+  .footer .media-wrap {
+    display: none;
+  }
+
+  .footer .group-title {
+    font-size: 24px;
+    padding-bottom: 27px;
+  }
+
+  .footer .address {
+    max-width: unset;
+  }
+
+  .footer .container {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .footer .email {
+    padding-bottom: 20px;
+  }
 }
 
 @media (max-width: 475px) {
   .copyright-bar .copyright {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 370px) {
+  .footer-nav .nav-links {
+    display: none;
+  }
+
+  .hero .media-wrap {
+    display: none;
   }
 }
