@@ -952,7 +952,7 @@ body {
   }
 
   .classes .about-wrap {
-    top: 41px;
+    top: 42px;
   }
 
   .dont-stop .gym-tip {
@@ -964,6 +964,18 @@ body {
 
   .dont-stop .get-started {
     padding: 9px 17px;
+  }
+
+  .hero .section-tag {
+    font-size: 14px;
+  }
+
+  .classes .new-badge {
+    font-size: 11px;
+  }
+
+  .class .class-price  {
+    font-size: 14px;
   }
 }
 
