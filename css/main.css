@@ -1435,7 +1435,7 @@ body {
 /* our classes responsive */
 @media (max-width: 1380px) {
   .our-classes .classes-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 16px;
     column-gap: 16px;
   }
@@ -1476,6 +1476,12 @@ body {
 
   .popup-wrap .popup-wrap__btn {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .our-classes .classes-grid {
+    grid-template-columns: 1fr;
   }
 }
 
