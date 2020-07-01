@@ -1435,7 +1435,7 @@ body {
 /* our classes responsive */
 @media (max-width: 1380px) {
   .our-classes .classes-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     row-gap: 16px;
     column-gap: 16px;
   }
