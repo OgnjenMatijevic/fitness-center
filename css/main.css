@@ -1120,6 +1120,10 @@ body {
   .welcome .container {
     column-gap: 103px;
   }
+
+  .welcome .text-wrap {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 1200px) {
